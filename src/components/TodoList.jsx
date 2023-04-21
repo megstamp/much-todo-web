@@ -4,7 +4,7 @@ import { List }  from "antd"
 export default function TodoList({ loading, itemList, setItemList, setLoading }) {
 
     useEffect(() => {
-        fetch("https://much-todo-app-ms.web.app/items")
+        fetch("https://much-todo-app-ms.web.app/items")//GET
         .then(resp => resp.json())
         .then(setItemList)
         .catch(alert)
