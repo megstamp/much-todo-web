@@ -10,7 +10,7 @@
 
 body{
   font-family: "Raleway", sans-serif;
-  background-image: url("../public/images/bg\ \(1\).webp");
+  background-image: url("../public/images/pexels-lisa-fotios-851213.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 20px;
   -webkit-text-fill-color: rgb(117, 113, 113);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-color: rgb(10, 37, 118);
 }
 
 li {
@@ -39,21 +39,16 @@ main {
   width: 89%;
   max-width: 750px;
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 20%;
   padding: 15px;
-  background-color: rgba(235, 234, 234, 0.7);
+  background-color: rgba(235, 234, 234, 0.871);
   padding: 15px;
   border-radius: 23px;
-  border: 5px solid rgba(255, 253, 244, 0.5);
+  border: 5px solid rgba(255, 253, 244, 0.903);
   filter: drop-shadow(0px 0px 30px black(214,213,213));
 }
 
 button.ant-btn {
-  background-color: purple;
+  background-color: rgb(26, 75, 199);
 }
 
-span.ant-input-affix-wrapper,
-input.ant-input {
-  background-color: rgb(240,178,196);
-  font-size: var(--text-size);
-}

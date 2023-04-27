@@ -3,14 +3,14 @@ import Header from "./components/Header";
 import TodoList from "./components/TodoList";
 import './App.css';
 
-function App() {
+function App() { //every App component returns jsx. App is the top react component, the main website
 
-const[loading, setLoading] = useState(true)
-const [itemList, setItemList]= useState()
+  const[loading, setLoading] = useState(true) //loading is initially true 
+  const [itemList, setItemList]= useState()  // the getter is the variable
 
   return (
     <main>
-      <h1>Much Todo</h1>
+      <h1>Todo List</h1>
       <Header setLoading={setLoading} setItemList={setItemList} />
       <TodoList loading={loading}
        itemList={itemList} 
@@ -22,3 +22,6 @@ const [itemList, setItemList]= useState()
   
 
 export default App;
+
+
+//setter is a function that allows us to change or mutate our state variable. setLoading allows us to change loading.

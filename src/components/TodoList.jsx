@@ -11,6 +11,21 @@ export default function TodoList({ loading, itemList, setItemList, setLoading })
         .finally(() => setLoading(false))
     }, [])
 
+    const deleteTask = (taskId) => { 
+        setLoading(true)
+        fetch(`https://much-todo-app-ms.web.app/items/${taskId}`,{
+            method: "DELETE",
+            headers: { 
+                "Content-Type": "application/json"
+            }
+        })
+        .then(resp => resp.json())
+        .then(setItemList)
+        .catch(alert)
+        .finally(() => setLoading(false))
+
+    }
+
     return (
         <section>
             <List 
@@ -19,7 +34,7 @@ export default function TodoList({ loading, itemList, setItemList, setLoading })
                 loading={loading}
                 size="large"
                 renderItem={(task) => (
-                <List.Item className={(task.done) && "done"}>
+                <List.Item onClick={() => deleteTask(task.id)} className={(task.done) && "done"}>
                     {task.item}
                 </List.Item>
              ) }
