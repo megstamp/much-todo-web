@@ -10,7 +10,7 @@ function App() { //every App component returns jsx. App is the top react compone
 
   return (
     <main>
-      <h1>Todo List</h1>
+      <h1>To-do List</h1>
       <Header setLoading={setLoading} setItemList={setItemList} />
       <TodoList loading={loading}
        itemList={itemList} 

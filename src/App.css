@@ -10,7 +10,7 @@
 
 body{
   font-family: "Raleway", sans-serif;
-  background-image: url("../public/images/pexels-lisa-fotios-851213.jpg");
+  background-image: url("../public/images/pexels-rie-sadohara-2968327.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,9 +21,9 @@ h1 {
   font-size: clamp(3.8rem, 4vw, 4.2rem);
   text-align: center;
   margin-bottom: 20px;
-  -webkit-text-fill-color: rgb(117, 113, 113);
+  -webkit-text-fill-color: purple;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(10, 37, 118);
+  -webkit-text-stroke-color: rgb(67, 4, 77);
 }
 
 li {
@@ -41,14 +41,14 @@ main {
   margin: 0 auto;
   margin-top: 20%;
   padding: 15px;
-  background-color: rgba(235, 234, 234, 0.871);
+  background-color: rgba(240, 227, 238, 0.871);
   padding: 15px;
   border-radius: 23px;
-  border: 5px solid rgba(255, 253, 244, 0.903);
+  border: 5px solid rgba(224, 195, 224, 0.903);
   filter: drop-shadow(0px 0px 30px black(214,213,213));
 }
 
 button.ant-btn {
-  background-color: rgb(26, 75, 199);
+  background-color: purple;
 }
 
